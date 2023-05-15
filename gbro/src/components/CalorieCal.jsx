@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Input, Select } from "antd";
 import Male from "../assets/male.jpg";
 import { useQuery } from "@tanstack/react-query";
 import { styles } from "../styles";
