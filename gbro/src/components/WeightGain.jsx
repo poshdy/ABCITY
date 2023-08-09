@@ -55,7 +55,10 @@ const WeightGain = () => {
           </p>
         </div>
       </div>
-      <h2 className="text-center font-bold">Note: This Nutrition plan is not accurate it is just for educational purpose :)</h2>
+      <h2 className="text-center font-bold">
+        Note: This Nutrition plan is not accurate it is just for educational
+        purpose :)
+      </h2>
     </div>
   );
 };

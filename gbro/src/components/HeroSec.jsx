@@ -1,40 +1,53 @@
 import React from "react";
-import Hero from "../assets/Hero.jpeg";
-import Dumbbell from '../assets/dumbbell .png'
+import Female from "../assets/female.jpg";
 import { styles } from "../styles";
 const HeroSec = () => {
   return (
-    <section className={`h-[1000px] flex flex-col items-center justify-end relative`}>
-      <div
-        className={`${styles.container}flex flex-col justify-center items-start `}
-      >
-        <div className={`flex flex-col items-start`}>
-          <p className={`${styles.subText} font-bold uppercase w-[50%] text-white  `}>
-           we provides a range of fitness services to help individuals achieve
-            their health and fitness goals.
-          </p>
-          <h1 className={`${styles.mainText} `}>
-            Everything is hard before it is easy
-          </h1>
-        </div>
-        <h1 className=" text-white text-[100px] md:text-[140px] lg:text-[170px] absolute bottom-0 z-40 font-black uppercase text-left ">
+    <section className={`p-5 bg-white/95 rounded-b-2xl`}>
+      <div className="flex items-start md:items-center md:justify-center">
+        <h1
+          className={`${styles.mainText} text-black text-left md:text-center w-[70%] md:w-[50%]`}
+        >
+          Everything <br />
+          is hard before it is easy
+        </h1>
+      </div>
+
+      <div className="w-full h-[600px]  relative">
+        <img
+          src={Female}
+          className="w-full h-full object-cover border-2 border-black rounded-2xl"
+        />
+        <h1
+          className={`text-6xl lg:text-9xl absolute left-0 bottom-0 px-1 text-white font-bold uppercase `}
+        >
           be limitless
         </h1>
-
-        
       </div>
-        <div className="w-[400px] h-[400px] rounded-full border-4 hidden md:block  border-orange-500 bg-transparent absolute right-6 top-[55px]"/>
-         
-          
-        
-
-      <img src={Hero} className=" w-full h-[600px] object-cover z-20" />
+      <div className="flex flex-col gap-3">
+        <p
+          className={` font-bold uppercase text-xl  md:text-3xl w-full md:w-[70%]  text-black`}
+        >
+          we are a fitness agency provides a range of fitness services to help
+          individuals achieve their health and fitness goals.
+        </p>
+        <div className="font-bold text-sm md:text-base space-x-1">
+          <a
+            className="border-2 rounded-full border-black px-3 py-1"
+            href="#bmi"
+          >
+            Calculate your bmi
+          </a>
+          <a className="border-2 rounded-full border-black px-3 py-1">
+            About us
+          </a>
+        </div>
+      </div>
     </section>
   );
 };
 
 export default HeroSec;
-
 {
   /* <div className="md:w-[50%] flex flex-col gap-2 items-center justify-start" >
 
